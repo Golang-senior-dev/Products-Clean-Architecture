@@ -1,6 +1,6 @@
 package domain
 
-type Pagination []struct {
-	Items interface{} `json:"items"`
-	Total int32       `json:"total"`
+type Pagination struct {
+	Items []Product `json:"items"`
+	Total int32     `json:"total"`
 }

@@ -20,10 +20,10 @@ type ProductService interface {
 
 type ProductUseCase interface {
 	Create(productRequest *dto.CreateProductRequest) (*Product, error)
-	Fetch(paginationRequest *dto.PaginationRequestParams) (interface{}, error)
+	Fetch(paginationRequest *dto.PaginationRequestParams) (*Pagination, error)
 }
 
 type ProductRepository interface {
 	Create(productRequest *dto.CreateProductRequest) (*Product, error)
-	Fetch(paginationRequest *dto.PaginationRequestParams) (interface{}, error)
+	Fetch(paginationRequest *dto.PaginationRequestParams) (*Pagination, error)
 }
