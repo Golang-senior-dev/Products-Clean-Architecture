@@ -12,7 +12,7 @@ func (repository repository) Create(productRequest *dto.CreateProductRequest) (*
 	product := domain.Product{}
 
 	err := repository.db.QueryRow(
-		&ctx,
+		ctx,
 		"INSERT INTO product (name, price, description) VALUES ($1, $2, $3) returning *",
 		productRequest.Name,
 		productRequest.Price,

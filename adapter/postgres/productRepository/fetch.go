@@ -27,7 +27,7 @@ func (repository repository) Fetch(pagination *dto.PaginationRequestParams) (*do
 
 	{
 		rows, err := repository.db.Query(
-			&ctx,
+			ctx,
 			*query,
 		)
 
@@ -50,7 +50,7 @@ func (repository repository) Fetch(pagination *dto.PaginationRequestParams) (*do
 	}
 
 	{
-		err := repository.db.QueryRow(&ctx, *queryCount).Scan(&total)
+		err := repository.db.QueryRow(ctx, *queryCount).Scan(&total)
 
 		if err != nil {
 			return nil, err
