@@ -11,6 +11,8 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/spf13/viper"
+
+	_ "github.com/golang-migrate/migrate/v4/source/file"
 )
 
 type PoolInterface interface {
