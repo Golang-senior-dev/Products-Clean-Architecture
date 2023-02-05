@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: clean-arch-go
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=clean-arch-go
+      - POSTGRES_USER=clean-arch-go
+      - POSTGRES_PASSWORD=clean-arch-go
