@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/booscaaa/go-paginate v0.0.6
 	github.com/golang-migrate/migrate/v4 v4.15.2
+	github.com/gorilla/mux v1.8.0
 	github.com/jackc/pgconn v1.11.0
 	github.com/jackc/pgx/v4 v4.15.0
 	github.com/spf13/viper v1.15.0
