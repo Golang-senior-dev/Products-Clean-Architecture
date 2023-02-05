@@ -3,6 +3,7 @@ module github.com/henriquehendel/productCleanArchitecture
 go 1.17
 
 require (
+	github.com/booscaaa/go-paginate v0.0.6
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/jackc/pgconn v1.13.0
 	github.com/jackc/pgx/v4 v4.10.1
