@@ -1,0 +1,8 @@
+{
+  "database": {
+    "url":"://clean-arch-go:clean-arch-go@localhost:5432/clean-arch-go"
+  },
+  "server": {
+    "port": 3000
+  }
+}
