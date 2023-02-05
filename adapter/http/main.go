@@ -42,5 +42,5 @@ func main() {
 
 	log.Printf("LISTEN ON PORT: %v\n", port)
 
-	http.ListenAndServe(fmt.Sprintf(":%v\n", port), router)
+	http.ListenAndServe(fmt.Sprintf(":%v", port), router)
 }
